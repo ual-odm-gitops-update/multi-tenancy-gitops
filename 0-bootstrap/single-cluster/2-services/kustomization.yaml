@@ -1,5 +1,6 @@
 resources:
-
+- argocd/operators/ibm-cp4a-operator.yaml
+# - argocd/instances/ibm-cp4ba-odm.yaml
 ## IBM Foundational Services / Common Services
 - argocd/operators/ibm-foundations.yaml
 - argocd/instances/ibm-foundational-services-instance.yaml

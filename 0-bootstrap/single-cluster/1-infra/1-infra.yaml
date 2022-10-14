@@ -66,6 +66,10 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-image-registry
     server: https://kubernetes.default.svc
+  - namespace: cp4ba
+    server: https://kubernetes.default.svc
+  - namespace: norootsquash
+    server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
     kind: Namespace

@@ -12,14 +12,14 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: cloudpak
+    namespace: cp4ba
     server: https://kubernetes.default.svc
   project: services
   source:
     repoURL: "" # Populated by kustomize patches in 2-services/kustomization.yaml
     targetRevision: "" # Populated by kustomize patches in 2-services/kustomization.yaml
     path: operators/ibm-cp4a-operator
-  syncPolicy: {}
-    # automated:
-    #   prune: true
-    #   selfHeal: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
